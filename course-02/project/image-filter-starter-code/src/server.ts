@@ -18,7 +18,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
     if ( !image_url ) {
       return res
-      .status(400)
+      .status(422)
       .send(`image_url is required`);
     }
 
